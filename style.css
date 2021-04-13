@@ -19,6 +19,8 @@ body, html {
     position: fixed;
     background-color: white;
     padding: 30px 87px;
+    z-index: 3;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .5);
 }
 
 .topbar nav {
@@ -57,8 +59,8 @@ body, html {
     float: left;
     height: 200px;
     background: #FFF;
-    width: calc(100% - 375px);
-    box-shadow: rgba(0, 0, 0, .05);
+    width: calc(100% - 325px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .05);
     /* box-shadow: 0 4px 30px #000; */
     position: relative;
     z-index: 2;
@@ -69,7 +71,7 @@ body, html {
     float: right;
     background: #FBFBFB;
     /* background: #CCC; */
-    width:375px;
+    width:325px;
     padding: 40px;
     z-index: 1;
 }
@@ -118,20 +120,35 @@ body, html {
     margin: 50px 0;
 }
 
+
 .article {
-    overflow: hidden;
+    float: left;
+    width: 280px;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 50px;
+    /* margin-bottom: 300px; */
+      /* padding-left: 333px;
+    position: relative;
+    min-height: 230px; */
+    /* overflow: hidden; */
 }
 
 .article-img {
-    float: left;
-    width: 308px;
-    margin-right: 25px;
+    /* position: absolute;
+    left: 0;*/
+    top: 0;
+    /* float: left;  */
+    width: 253.48px;
+    height: 142.22px;
+    /* margin-right: 25px; */
 }
 
 .article-img img {
+    
     width: 100%;
-    height: auto;
 }
+
 
 .article-date {
     font-weight: 300;
@@ -150,12 +167,15 @@ body, html {
 
 
 .article-title {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     line-height: 1.1;
     font-family: "Cardo", serif;
     margin: 0 0 15px 0;
 }
 
+p{
+    text-justify:auto;
+}
 .footer {
     clear: both;
 }
